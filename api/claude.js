@@ -38,17 +38,3 @@ export default async function handler(req, res) {
     return res.status(500).json({ error: err.message || 'Server error' });
   }
 }
-```
-
-4. Click **Commit new file**
-
-**Step 3 — Confirm your API key is in Vercel**
-
-Go to your Vercel project → **Settings → Environment Variables** and make sure `ANTHROPIC_API_KEY` is set to your current key. Then go to **Deployments → Redeploy**.
-
-Your repo should look like this when done:
-```
-fpi-intel/
-  index.html
-  api/
-    claude.js
